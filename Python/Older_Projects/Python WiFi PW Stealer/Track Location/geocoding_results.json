@@ -1,0 +1,959 @@
+[
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "53\u00b0 20' 57.76620'' N",
+        "lng": "6\u00b0 15' 38.01348'' W"
+      },
+      "ITM": {
+        "easting": "715810.384",
+        "northing": "734650.388"
+      },
+      "MGRS": "29UPV8233714635",
+      "Maidenhead": "IO63ui83ru",
+      "Mercator": {
+        "x": -696922.273,
+        "y": 7013581.711
+      },
+      "NUTS": {
+        "NUTS0": {
+          "code": "IE"
+        },
+        "NUTS1": {
+          "code": "IE0"
+        },
+        "NUTS2": {
+          "code": "IE06"
+        },
+        "NUTS3": {
+          "code": "IE061"
+        }
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=1109531#map=17/53.34938/-6.26056",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/53.34938/-6.26056&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=53.34938&mlon=-6.26056#map=17/53.34938/-6.26056"
+      },
+      "UN_M49": {
+        "regions": {
+          "EUROPE": "150",
+          "IE": "372",
+          "NORTHERN_EUROPE": "154",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 353,
+      "currency": {
+        "alternate_symbols": [],
+        "decimal_mark": ".",
+        "html_entity": "\u20ac",
+        "iso_code": "EUR",
+        "iso_numeric": "978",
+        "name": "Euro",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "\u20ac",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddee\ud83c\uddea",
+      "geohash": "gc7x3xcnwmhssrub08u3",
+      "qibla": 114.1,
+      "roadinfo": {
+        "drive_on": "left",
+        "speed_in": "km/h"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701245640,
+          "astronomical": 1701238080,
+          "civil": 1701243180,
+          "nautical": 1701240540
+        },
+        "set": {
+          "apparent": 1701274320,
+          "astronomical": 1701281880,
+          "civil": 1701276780,
+          "nautical": 1701279420
+        }
+      },
+      "timezone": {
+        "name": "Europe/Dublin",
+        "now_in_dst": 1,
+        "offset_sec": 0,
+        "offset_string": "+0000",
+        "short_name": "GMT"
+      },
+      "what3words": {
+        "words": "ripe.swan.motor"
+      },
+      "wikidata": "Q1761"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 53.4105416,
+        "lng": -6.1148829
+      },
+      "southwest": {
+        "lat": 53.2987342,
+        "lng": -6.3870259
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "IE",
+      "ISO_3166-1_alpha-3": "IRL",
+      "ISO_3166-2": [
+        "IE-L",
+        "IE-D"
+      ],
+      "_category": "place",
+      "_type": "city",
+      "city": "Dublin",
+      "continent": "Europe",
+      "country": "Ireland",
+      "country_code": "ie",
+      "county": "County Dublin",
+      "county_code": "D",
+      "political_union": "European Union",
+      "region": "Leinster"
+    },
+    "confidence": 5,
+    "formatted": "Dublin, Ireland",
+    "geometry": {
+      "lat": 53.3493795,
+      "lng": -6.2605593
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "53\u00b0 24' 23.45292'' N",
+        "lng": "6\u00b0 17' 12.00372'' W"
+      },
+      "ITM": {
+        "easting": "713919.651",
+        "northing": "740965.170"
+      },
+      "MGRS": "29UPV8035820923",
+      "Maidenhead": "IO63uj57on",
+      "Mercator": {
+        "x": -699828.647,
+        "y": 7024218.243
+      },
+      "NUTS": {
+        "NUTS0": {
+          "code": "IE"
+        },
+        "NUTS1": {
+          "code": "IE0"
+        },
+        "NUTS2": {
+          "code": "IE06"
+        },
+        "NUTS3": {
+          "code": "IE061"
+        }
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=282800#map=17/53.40651/-6.28667",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/53.40651/-6.28667&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=53.40651&mlon=-6.28667#map=17/53.40651/-6.28667"
+      },
+      "UN_M49": {
+        "regions": {
+          "EUROPE": "150",
+          "IE": "372",
+          "NORTHERN_EUROPE": "154",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 353,
+      "currency": {
+        "alternate_symbols": [],
+        "decimal_mark": ".",
+        "html_entity": "\u20ac",
+        "iso_code": "EUR",
+        "iso_numeric": "978",
+        "name": "Euro",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "\u20ac",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddee\ud83c\uddea",
+      "geohash": "gc7xbfq5qpbvc9hdgzpn",
+      "qibla": 114.12,
+      "roadinfo": {
+        "drive_on": "left",
+        "speed_in": "km/h"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701245700,
+          "astronomical": 1701238080,
+          "civil": 1701243240,
+          "nautical": 1701240600
+        },
+        "set": {
+          "apparent": 1701274320,
+          "astronomical": 1701281880,
+          "civil": 1701276780,
+          "nautical": 1701279420
+        }
+      },
+      "timezone": {
+        "name": "Europe/Dublin",
+        "now_in_dst": 1,
+        "offset_sec": 0,
+        "offset_string": "+0000",
+        "short_name": "GMT"
+      },
+      "what3words": {
+        "words": "escape.square.sits"
+      },
+      "wikidata": "Q173500"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 53.6347143,
+        "lng": -5.9945041
+      },
+      "southwest": {
+        "lat": 53.1782636,
+        "lng": -6.5468919
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "IE",
+      "ISO_3166-1_alpha-3": "IRL",
+      "ISO_3166-2": [
+        "IE-L",
+        "IE-D"
+      ],
+      "_category": "place",
+      "_type": "county",
+      "continent": "Europe",
+      "country": "Ireland",
+      "country_code": "ie",
+      "county": "County Dublin",
+      "county_code": "D",
+      "political_union": "European Union",
+      "region": "Leinster"
+    },
+    "confidence": 2,
+    "formatted": "County Dublin, Ireland",
+    "geometry": {
+      "lat": 53.4065147,
+      "lng": -6.2866677
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "37\u00b0 42' 7.74756'' N",
+        "lng": "121\u00b0 56' 8.85048'' W"
+      },
+      "FIPS": {
+        "county": "06001",
+        "state": "06"
+      },
+      "MGRS": "10SEG9381273301",
+      "Maidenhead": "CM97aq78qm",
+      "Mercator": {
+        "x": -13573830.253,
+        "y": 4511301.044
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=3165541#map=17/37.70215/-121.93579",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/37.70215/-121.93579&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=37.70215&mlon=-121.93579#map=17/37.70215/-121.93579"
+      },
+      "UN_M49": {
+        "regions": {
+          "AMERICAS": "019",
+          "NORTHERN_AMERICA": "021",
+          "US": "840",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 1,
+      "currency": {
+        "alternate_symbols": [
+          "US$"
+        ],
+        "decimal_mark": ".",
+        "disambiguate_symbol": "US$",
+        "html_entity": "$",
+        "iso_code": "USD",
+        "iso_numeric": "840",
+        "name": "United States Dollar",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "$",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "geohash": "9q9q3r3nfne9tfd4vn15",
+      "qibla": 19.35,
+      "roadinfo": {
+        "drive_on": "right",
+        "speed_in": "mph"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701270180,
+          "astronomical": 1701264660,
+          "civil": 1701268500,
+          "nautical": 1701266520
+        },
+        "set": {
+          "apparent": 1701218940,
+          "astronomical": 1701224460,
+          "civil": 1701220680,
+          "nautical": 1701222600
+        }
+      },
+      "timezone": {
+        "name": "America/Los_Angeles",
+        "now_in_dst": 0,
+        "offset_sec": -28800,
+        "offset_string": "-0800",
+        "short_name": "PST"
+      },
+      "what3words": {
+        "words": "mattresses.uproot.seasick"
+      },
+      "wikidata": "Q837109"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 37.7450996,
+        "lng": -121.832439
+      },
+      "southwest": {
+        "lat": 37.6977572,
+        "lng": -121.9877977
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "US",
+      "ISO_3166-1_alpha-3": "USA",
+      "ISO_3166-2": [
+        "US-CA"
+      ],
+      "_category": "place",
+      "_type": "city",
+      "continent": "North America",
+      "country": "United States",
+      "country_code": "us",
+      "county": "Alameda County",
+      "postcode": "94568",
+      "state": "California",
+      "state_code": "CA",
+      "town": "Dublin"
+    },
+    "confidence": 6,
+    "formatted": "Dublin, CA 94568, United States of America",
+    "geometry": {
+      "lat": 37.7021521,
+      "lng": -121.9357918
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "32\u00b0 32' 25.60092'' N",
+        "lng": "82\u00b0 54' 13.51440'' W"
+      },
+      "FIPS": {
+        "county": "13175",
+        "state": "13"
+      },
+      "MGRS": "17SLS2122901940",
+      "Maidenhead": "EM82nm19nq",
+      "Mercator": {
+        "x": -9228803.68,
+        "y": 3811481.644
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=119678#map=17/32.54044/-82.90375",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/32.54044/-82.90375&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=32.54044&mlon=-82.90375#map=17/32.54044/-82.90375"
+      },
+      "UN_M49": {
+        "regions": {
+          "AMERICAS": "019",
+          "NORTHERN_AMERICA": "021",
+          "US": "840",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 1,
+      "currency": {
+        "alternate_symbols": [
+          "US$"
+        ],
+        "decimal_mark": ".",
+        "disambiguate_symbol": "US$",
+        "html_entity": "$",
+        "iso_code": "USD",
+        "iso_numeric": "840",
+        "name": "United States Dollar",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "$",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "geohash": "djv117z3fd898fyfxzrn",
+      "qibla": 53.54,
+      "roadinfo": {
+        "drive_on": "right",
+        "speed_in": "mph"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701260100,
+          "astronomical": 1701254880,
+          "civil": 1701258480,
+          "nautical": 1701256680
+        },
+        "set": {
+          "apparent": 1701296700,
+          "astronomical": 1701301920,
+          "civil": 1701298320,
+          "nautical": 1701300120
+        }
+      },
+      "timezone": {
+        "name": "America/New_York",
+        "now_in_dst": 0,
+        "offset_sec": -18000,
+        "offset_string": "-0500",
+        "short_name": "EST"
+      },
+      "what3words": {
+        "words": "whirring.unfinished.raindrops"
+      },
+      "wikidata": "Q2671021"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 32.6036405,
+        "lng": -82.875066
+      },
+      "southwest": {
+        "lat": 32.481904,
+        "lng": -82.985095
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "US",
+      "ISO_3166-1_alpha-3": "USA",
+      "ISO_3166-2": [
+        "US-GA"
+      ],
+      "_category": "place",
+      "_type": "city",
+      "continent": "North America",
+      "country": "United States",
+      "country_code": "us",
+      "county": "Laurens County",
+      "state": "Georgia",
+      "state_code": "GA",
+      "town": "Dublin"
+    },
+    "confidence": 6,
+    "formatted": "Dublin, Georgia, United States of America",
+    "geometry": {
+      "lat": 32.5404447,
+      "lng": -82.903754
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "32\u00b0 5' 10.08600'' N",
+        "lng": "98\u00b0 20' 32.03916'' W"
+      },
+      "FIPS": {
+        "county": "48143",
+        "state": "48"
+      },
+      "MGRS": "14SNA6207250172",
+      "Maidenhead": "EM02tc80wq",
+      "Mercator": {
+        "x": -10947407.312,
+        "y": 3751927.476
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=9244623#map=17/32.08613/-98.34223",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/32.08613/-98.34223&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=32.08613&mlon=-98.34223#map=17/32.08613/-98.34223"
+      },
+      "UN_M49": {
+        "regions": {
+          "AMERICAS": "019",
+          "NORTHERN_AMERICA": "021",
+          "US": "840",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 1,
+      "currency": {
+        "alternate_symbols": [
+          "US$"
+        ],
+        "decimal_mark": ".",
+        "disambiguate_symbol": "US$",
+        "html_entity": "$",
+        "iso_code": "USD",
+        "iso_numeric": "840",
+        "name": "United States Dollar",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "$",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "geohash": "9vdnd1j77ch4sv2fez4q",
+      "qibla": 42.49,
+      "roadinfo": {
+        "drive_on": "right",
+        "speed_in": "mph"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701263700,
+          "astronomical": 1701258540,
+          "civil": 1701262140,
+          "nautical": 1701260340
+        },
+        "set": {
+          "apparent": 1701300480,
+          "astronomical": 1701219240,
+          "civil": 1701302040,
+          "nautical": 1701217440
+        }
+      },
+      "timezone": {
+        "name": "America/Chicago",
+        "now_in_dst": 0,
+        "offset_sec": -21600,
+        "offset_string": "-0600",
+        "short_name": "CST"
+      },
+      "what3words": {
+        "words": "forearm.upstage.patrolling"
+      },
+      "wikidata": "Q981816"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 32.1046089,
+        "lng": -98.3134317
+      },
+      "southwest": {
+        "lat": 32.0651449,
+        "lng": -98.3752407
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "US",
+      "ISO_3166-1_alpha-3": "USA",
+      "ISO_3166-2": [
+        "US-TX"
+      ],
+      "_category": "place",
+      "_type": "city",
+      "continent": "North America",
+      "country": "United States",
+      "country_code": "us",
+      "county": "Erath County",
+      "postcode": "76446",
+      "state": "Texas",
+      "state_code": "TX",
+      "town": "Dublin"
+    },
+    "confidence": 7,
+    "formatted": "Dublin, TX 76446, United States of America",
+    "geometry": {
+      "lat": 32.086135,
+      "lng": -98.3422331
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "40\u00b0 5' 57.22584'' N",
+        "lng": "83\u00b0 6' 50.67756'' W"
+      },
+      "FIPS": {
+        "county": "39049",
+        "state": "39"
+      },
+      "MGRS": "17TLE1979740912",
+      "Maidenhead": "EN80kc63ht",
+      "Mercator": {
+        "x": -9252216.741,
+        "y": 4852844.876
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=182701#map=17/40.09923/-83.11408",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/40.09923/-83.11408&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=40.09923&mlon=-83.11408#map=17/40.09923/-83.11408"
+      },
+      "UN_M49": {
+        "regions": {
+          "AMERICAS": "019",
+          "NORTHERN_AMERICA": "021",
+          "US": "840",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 1,
+      "currency": {
+        "alternate_symbols": [
+          "US$"
+        ],
+        "decimal_mark": ".",
+        "disambiguate_symbol": "US$",
+        "html_entity": "$",
+        "iso_code": "USD",
+        "iso_numeric": "840",
+        "name": "United States Dollar",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "$",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "geohash": "dphuhey4vwhk8kf37d1j",
+      "qibla": 52.23,
+      "roadinfo": {
+        "drive_on": "right",
+        "speed_in": "mph"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701261240,
+          "astronomical": 1701255480,
+          "civil": 1701259440,
+          "nautical": 1701257460
+        },
+        "set": {
+          "apparent": 1701295620,
+          "astronomical": 1701301380,
+          "civil": 1701297420,
+          "nautical": 1701299460
+        }
+      },
+      "timezone": {
+        "name": "America/New_York",
+        "now_in_dst": 0,
+        "offset_sec": -18000,
+        "offset_string": "-0500",
+        "short_name": "EST"
+      },
+      "what3words": {
+        "words": "glee.nutrients.comics"
+      },
+      "wikidata": "Q988937"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 40.163273,
+        "lng": -83.0893875
+      },
+      "southwest": {
+        "lat": 40.0632173,
+        "lng": -83.2019456
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "US",
+      "ISO_3166-1_alpha-3": "USA",
+      "ISO_3166-2": [
+        "US-OH"
+      ],
+      "_category": "place",
+      "_type": "city",
+      "continent": "North America",
+      "country": "United States",
+      "country_code": "us",
+      "county": "Franklin County",
+      "municipality": "Washington Township",
+      "state": "Ohio",
+      "state_code": "OH",
+      "town": "Dublin"
+    },
+    "confidence": 6,
+    "formatted": "Dublin, Ohio, United States of America",
+    "geometry": {
+      "lat": 40.0992294,
+      "lng": -83.1140771
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "37\u00b0 6' 20.44224'' N",
+        "lng": "80\u00b0 41' 7.23660'' W"
+      },
+      "FIPS": {
+        "county": "51155",
+        "state": "51"
+      },
+      "MGRS": "17SNB2795806642",
+      "Maidenhead": "EM97pc75si",
+      "Mercator": {
+        "x": -8981851.353,
+        "y": 4428067.345
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=206909#map=17/37.10568/-80.68534",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/37.10568/-80.68534&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=37.10568&mlon=-80.68534#map=17/37.10568/-80.68534"
+      },
+      "UN_M49": {
+        "regions": {
+          "AMERICAS": "019",
+          "NORTHERN_AMERICA": "021",
+          "US": "840",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 1,
+      "currency": {
+        "alternate_symbols": [
+          "US$"
+        ],
+        "decimal_mark": ".",
+        "disambiguate_symbol": "US$",
+        "html_entity": "$",
+        "iso_code": "USD",
+        "iso_numeric": "840",
+        "name": "United States Dollar",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "$",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "geohash": "dnwe5fysppz337dz6f5f",
+      "qibla": 54.29,
+      "roadinfo": {
+        "drive_on": "right",
+        "speed_in": "mph"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701260220,
+          "astronomical": 1701254700,
+          "civil": 1701258480,
+          "nautical": 1701256560
+        },
+        "set": {
+          "apparent": 1701295500,
+          "astronomical": 1701301020,
+          "civil": 1701297240,
+          "nautical": 1701299160
+        }
+      },
+      "timezone": {
+        "name": "America/New_York",
+        "now_in_dst": 0,
+        "offset_sec": -18000,
+        "offset_string": "-0500",
+        "short_name": "EST"
+      },
+      "what3words": {
+        "words": "pocket.cotton.keep"
+      },
+      "wikidata": "Q1373580"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 37.1135716,
+        "lng": -80.6697789
+      },
+      "southwest": {
+        "lat": 37.0802967,
+        "lng": -80.6946623
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "US",
+      "ISO_3166-1_alpha-3": "USA",
+      "ISO_3166-2": [
+        "US-VA"
+      ],
+      "_category": "place",
+      "_type": "city",
+      "continent": "North America",
+      "country": "United States",
+      "country_code": "us",
+      "county": "Pulaski County",
+      "state": "Virginia",
+      "state_code": "VA",
+      "town": "Dublin"
+    },
+    "confidence": 7,
+    "formatted": "Dublin, Virginia, United States of America",
+    "geometry": {
+      "lat": 37.1056784,
+      "lng": -80.6853435
+    }
+  },
+  {
+    "annotations": {
+      "DMS": {
+        "lat": "42\u00b0 54' 21.38508'' N",
+        "lng": "72\u00b0 3' 43.12080'' W"
+      },
+      "FIPS": {
+        "county": "33005",
+        "state": "33"
+      },
+      "MGRS": "18TYN3984654558",
+      "Maidenhead": "FN32xv27nk",
+      "Mercator": {
+        "x": -8021902.697,
+        "y": 5268567.383
+      },
+      "OSM": {
+        "edit_url": "https://www.openstreetmap.org/edit?relation=452081#map=17/42.90594/-72.06198",
+        "note_url": "https://www.openstreetmap.org/note/new#map=17/42.90594/-72.06198&layers=N",
+        "url": "https://www.openstreetmap.org/?mlat=42.90594&mlon=-72.06198#map=17/42.90594/-72.06198"
+      },
+      "UN_M49": {
+        "regions": {
+          "AMERICAS": "019",
+          "NORTHERN_AMERICA": "021",
+          "US": "840",
+          "WORLD": "001"
+        },
+        "statistical_groupings": [
+          "MEDC"
+        ]
+      },
+      "callingcode": 1,
+      "currency": {
+        "alternate_symbols": [
+          "US$"
+        ],
+        "decimal_mark": ".",
+        "disambiguate_symbol": "US$",
+        "html_entity": "$",
+        "iso_code": "USD",
+        "iso_numeric": "840",
+        "name": "United States Dollar",
+        "smallest_denomination": 1,
+        "subunit": "Cent",
+        "subunit_to_unit": 100,
+        "symbol": "$",
+        "symbol_first": 1,
+        "thousands_separator": ","
+      },
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "geohash": "drsu04y14nyxkfm6f70m",
+      "qibla": 59.75,
+      "roadinfo": {
+        "drive_on": "right",
+        "speed_in": "mph"
+      },
+      "sun": {
+        "rise": {
+          "apparent": 1701259080,
+          "astronomical": 1701253020,
+          "civil": 1701257220,
+          "nautical": 1701255060
+        },
+        "set": {
+          "apparent": 1701292500,
+          "astronomical": 1701298500,
+          "civil": 1701294360,
+          "nautical": 1701296460
+        }
+      },
+      "timezone": {
+        "name": "America/New_York",
+        "now_in_dst": 0,
+        "offset_sec": -18000,
+        "offset_string": "-0500",
+        "short_name": "EST"
+      },
+      "what3words": {
+        "words": "mutant.second.elbowing"
+      },
+      "wikidata": "Q2430201"
+    },
+    "bounds": {
+      "northeast": {
+        "lat": 42.922518,
+        "lng": -71.990686
+      },
+      "southwest": {
+        "lat": 42.865115,
+        "lng": -72.156264
+      }
+    },
+    "components": {
+      "ISO_3166-1_alpha-2": "US",
+      "ISO_3166-1_alpha-3": "USA",
+      "ISO_3166-2": [
+        "US-NH"
+      ],
+      "_category": "place",
+      "_type": "village",
+      "continent": "North America",
+      "country": "United States",
+      "country_code": "us",
+      "county": "Cheshire County",
+      "postcode": "03444",
+      "state": "New Hampshire",
+      "state_code": "NH",
+      "village": "Dublin"
+    },
+    "confidence": 6,
+    "formatted": "Dublin, Cheshire County, NH 03444, United States of America",
+    "geometry": {
+      "lat": 42.9059403,
+      "lng": -72.061978
+    }
+  }
+]

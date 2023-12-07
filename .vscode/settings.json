@@ -1,0 +1,25 @@
+{
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Path": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--in-place",
+        "--recursive",
+        "."
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "explorer.decorations.colors": true,
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.autoClosingComments": "languageDefined",
+    "editor.autoClosingDelete": "auto",
+    "editor.autoClosingQuotes": "languageDefined",
+    "editor.defaultFormatter": "golang.go",
+    "files.associations": {
+        "*.make": "makefile",
+        "*.mk": "makefile"
+    }
+}
