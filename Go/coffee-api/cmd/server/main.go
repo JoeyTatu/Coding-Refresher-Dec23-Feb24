@@ -21,6 +21,8 @@ type Application struct {
 var port = os.Getenv("PORT") // 8080
 
 func (app *Application) Serve() error {
+	fmt.Println("API listening on port", port)
+
 	srv := &http.Server{
 		Addr: fmt.Sprintf(":%s", port),
 	}
@@ -29,6 +31,9 @@ func (app *Application) Serve() error {
 }
 
 func main() {
+	// fmt.Println("USER:", os.Getenv("USER"))
+	// fmt.Println("PW:", os.Getenv("PW"))
+
 	var cfg Config
 	cfg.Port = port
 

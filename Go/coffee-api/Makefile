@@ -1,15 +1,13 @@
-
-
 DB_DOCKER_CONTAINER=coffee-api-container
 BINARY_NAME=coffeeapi
 DB_NAME=coffeedb
 DB_PORT=5432
 USER=root
 PW=password
-DB_URL="postgresql://${USER}:${PW}@localhost:${DB_PORT}/${DB_NAME}?sslmode=disable"
 
+DB_URL="postgresql://${USER}:${PW}@localhost:${DB_PORT}/${DB_NAME}?sslmode=disable"
 DSN="host=localhost port=${DB_PORT} user=${USER} password=${PW} dbname=${DB_NAME} sslmode=disable timezone=UTC connect_timeout=5"
-PORT=8080
+PORT=5555
 
 # Creating the container with Postgres software
 postgres:
@@ -47,5 +45,17 @@ build:
 	go build -o ${BINARY_NAME} cmd/server/*.go
 	@echo "Binary built!" 
 
-run:
-	go run cmd/server/main.go
+run: build stop_containers start_docker
+	@echo "Starting API..."
+	@env PORT=${PORT} DSN=${DSN} ./${BINARY_NAME} & 
+	@echo "API started"
+
+stop:
+	@echo "Stopping backend"
+	@taskkill /F /IM ${BINARY_NAME}
+	@powershell -Command "Remove-Item -Path 'C:\Users\Joey\Coding_New\Go\coffee-api\${BINARY_NAME}' -Force";
+	@echo "Stopped backend"
+
+start: run
+
+restart: stop start
