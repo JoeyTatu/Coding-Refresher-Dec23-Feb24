@@ -21,5 +21,8 @@
     "files.associations": {
         "*.make": "makefile",
         "*.mk": "makefile"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
     }
 }
