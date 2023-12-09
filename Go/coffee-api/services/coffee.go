@@ -2,6 +2,7 @@ package services
 
 import (
 	"context"
+	"errors"
 	"time"
 )
 
@@ -21,7 +22,7 @@ func (c *Coffee) GetAllCoffees() ([]*Coffee, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), dbTimeout)
 	defer cancel()
 
-	query := `select id, name, image, roast, region, price, grind_unit, created_at, updated_at from coffees`
+	query := `SELECT id, name, image, roast, region, price, grind_unit, created_at, updated_at FROM coffees`
 
 	rows, err := db.QueryContext(ctx, query)
 	if err != nil {
@@ -83,10 +84,9 @@ func (c *Coffee) CreateCoffee(coffee Coffee) (*Coffee, error) {
 
 	query := `
         INSERT INTO coffees (name, image, region, roast, price, grind_unit, created_at, updated_at)
-        values ($1, $2, $3, $4, $5, $6, $7, $8) returning *
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *
     `
-
-	_, err := db.ExecContext(
+	result, err := db.ExecContext(
 		ctx,
 		query,
 		coffee.Name,
@@ -100,6 +100,16 @@ func (c *Coffee) CreateCoffee(coffee Coffee) (*Coffee, error) {
 	)
 	if err != nil {
 		return nil, err
+	}
+
+	// Check if any rows were affected
+	numRows, err := result.RowsAffected()
+	if err != nil {
+		return nil, err
+	}
+
+	if numRows == 0 {
+		return nil, errors.New("no rows affected, insertion failed")
 	}
 
 	return &coffee, nil
@@ -121,7 +131,7 @@ func (c *Coffee) UpdateCoffee(id string, body Coffee) (*Coffee, error) {
             updated_at = $7
         WHERE id = $8
     `
-	// make sure to update the c.Name with body.Name
+
 	_, err := db.ExecContext(
 		ctx,
 		query,

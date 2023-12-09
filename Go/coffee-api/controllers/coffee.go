@@ -12,12 +12,13 @@ import (
 var models services.Models
 var coffee = models.Coffee
 
-// GET/coffees
+// GET /coffees
 func GetAllCoffees(w http.ResponseWriter, r *http.Request) {
 	var coffees services.Coffee
 	all, err := coffees.GetAllCoffees()
 	if err != nil {
 		helpers.MessageLogs.ErrorLog.Println(err)
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 	helpers.WriteJSON(w, http.StatusOK, helpers.Envelope{"coffees": all})
@@ -28,6 +29,7 @@ func GetCoffeeById(w http.ResponseWriter, r *http.Request) {
 	coffee, err := coffee.GetCoffeeById(id)
 	if err != nil {
 		helpers.MessageLogs.ErrorLog.Println(err)
+		http.Error(w, "Not Found", http.StatusNotFound)
 		return
 	}
 	helpers.WriteJSON(w, http.StatusOK, coffee)
@@ -38,17 +40,20 @@ func CreateCoffee(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&coffeeResp)
 	if err != nil {
 		helpers.MessageLogs.ErrorLog.Println(err)
+		http.Error(w, "Bad Request", http.StatusBadRequest)
 		return
 	}
-	helpers.WriteJSON(w, http.StatusOK, coffeeResp)
+
 	coffeeCreated, err := coffee.CreateCoffee(coffeeResp)
 	if err != nil {
 		helpers.MessageLogs.ErrorLog.Println(err)
-		helpers.WriteJSON(w, http.StatusOK, coffeeCreated)
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
 	}
+
+	helpers.WriteJSON(w, http.StatusOK, coffeeCreated)
 }
 
-// TODO check the arguements for the update service
 func UpdateCoffee(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	var coffee services.Coffee
@@ -57,19 +62,24 @@ func UpdateCoffee(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
-	helpers.WriteJSON(w, http.StatusOK, coffee)
+
 	coffeeObj, err := coffee.UpdateCoffee(id, coffee)
 	if err != nil {
 		helpers.MessageLogs.ErrorLog.Println(err)
-		helpers.WriteJSON(w, http.StatusOK, coffeeObj)
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
 	}
+
+	helpers.WriteJSON(w, http.StatusOK, coffeeObj)
 }
 
 func DeleteCoffee(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	err := coffee.DeleteCoffee(id)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+		helpers.MessageLogs.ErrorLog.Println(err)
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
 	}
-	helpers.WriteJSON(w, http.StatusOK, "succesfull deletion")
+	helpers.WriteJSON(w, http.StatusOK, "successful deletion")
 }
