@@ -11,8 +11,7 @@ import (
 	"github.com/JoeyTatu/coffee-api/services"
 )
 
-type Envelope map[string]interface {
-}
+type Envelope map[string]interface{}
 
 type Message struct {
 	InfoLog  *log.Logger
@@ -28,16 +27,16 @@ var MessageLogs = &Message{
 }
 
 func ReadJSON(w http.ResponseWriter, r *http.Request, data interface{}) error {
-	maxBytes := 1048576 // 1MB
+	maxBytes := 1048576 // one megabyte
 	r.Body = http.MaxBytesReader(w, r.Body, int64(maxBytes))
-	dec := json.NewDecoder(r.Body) // Decoder
+	dec := json.NewDecoder(r.Body)
 	err := dec.Decode(data)
 	if err != nil {
 		return err
 	}
-	err = dec.Decode(&struct{}{})
-	if err != io.EOF { // End of file
-		return errors.New("body must have only one single json value")
+	err = dec.Decode(&struct{}{}) // TODO: eliminate if possible
+	if err != io.EOF {
+		return errors.New("body must have only a single json value")
 	}
 	return nil
 }
@@ -52,7 +51,7 @@ func WriteJSON(w http.ResponseWriter, status int, data interface{}, headers ...h
 			w.Header()[key] = value
 		}
 	}
-	w.Header().Set("Context-Type", "application/json")
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
 	_, err = w.Write(out)
 	if err != nil {
@@ -61,7 +60,7 @@ func WriteJSON(w http.ResponseWriter, status int, data interface{}, headers ...h
 	return nil
 }
 
-func ErrorJson(w http.ResponseWriter, err error, status ...int) {
+func ErrorJSON(w http.ResponseWriter, err error, status ...int) {
 	statusCode := http.StatusBadRequest
 	if len(status) > 0 {
 		statusCode = status[0]

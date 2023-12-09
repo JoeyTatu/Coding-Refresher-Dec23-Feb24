@@ -7,7 +7,7 @@ import (
 
 var db *sql.DB
 
-// Time for DB process with any transaction
+// time for db proccess with any transaction
 const dbTimeout = time.Second * 3
 
 func New(dbPool *sql.DB) Models {

@@ -48,6 +48,7 @@ func CreateCoffee(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// TODO check the arguements for the update service
 func UpdateCoffee(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	var coffee services.Coffee

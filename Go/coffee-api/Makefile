@@ -27,10 +27,21 @@ stop_containers:
 		echo "No active containers found."; \
 	fi
 
-# Start Docker container
+# Docker
+create_docker: postgres createdb
+
 start_docker:
 	docker start ${DB_DOCKER_CONTAINER}
 
+stop_docker:
+	@echo "Stopping Docker container ${DB_DOCKER_CONTAINER}"
+	@docker stop ${DB_DOCKER_CONTAINER} || true
+
+remove_docker:
+	@echo "Removing Docker container ${DB_DOCKER_CONTAINER}"
+	@docker rm ${DB_DOCKER_CONTAINER} || true
+
+# Migrations
 create_migrations:
 	sqlx migrate add -r init
 
@@ -40,6 +51,7 @@ migrate_up:
 migrate_down:
 	sqlx migrate revert --database-url=${DB_URL}
 
+# Building and running
 build:
 	@echo "Building backend API binary" 
 	go build -o ${BINARY_NAME} cmd/server/*.go
@@ -56,6 +68,9 @@ stop:
 	@powershell -Command "Remove-Item -Path 'C:\Users\Joey\Coding_New\Go\coffee-api\${BINARY_NAME}' -Force";
 	@echo "Stopped backend"
 
+# Shortcuts
 start: run
 
 restart: stop start
+
+end_docker: stop_docker remove_docker
