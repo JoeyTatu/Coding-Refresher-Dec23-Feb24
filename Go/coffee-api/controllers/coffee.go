@@ -81,5 +81,5 @@ func DeleteCoffee(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 		return
 	}
-	helpers.WriteJSON(w, http.StatusOK, "successful deletion")
+	helpers.WriteJSON(w, http.StatusOK, "successfully deleted or id does not exist")
 }

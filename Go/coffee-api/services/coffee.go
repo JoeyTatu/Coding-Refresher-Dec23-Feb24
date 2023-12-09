@@ -120,7 +120,7 @@ func (c *Coffee) UpdateCoffee(id string, body Coffee) (*Coffee, error) {
 	defer cancel()
 
 	query := `
-        UPDATE coffees 
+        UPDATE coffees
         SET
             name = $1,
             image = $2,
@@ -141,7 +141,7 @@ func (c *Coffee) UpdateCoffee(id string, body Coffee) (*Coffee, error) {
 		body.Price,
 		body.GrindUnit,
 		body.Region,
-		body.UpdatedAt,
+		time.Now(),
 		id,
 	)
 	if err != nil {
