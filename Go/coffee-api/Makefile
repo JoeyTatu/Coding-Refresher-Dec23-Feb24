@@ -9,16 +9,14 @@ DB_URL="postgresql://${USER}:${PW}@localhost:${DB_PORT}/${DB_NAME}?sslmode=disab
 DSN="host=localhost port=${DB_PORT} user=${USER} password=${PW} dbname=${DB_NAME} sslmode=disable timezone=UTC connect_timeout=5"
 PORT=5555
 
-# Creating the container with Postgres software
-postgres:
+# Docker
+create_docker_container:
 	docker run --name ${DB_DOCKER_CONTAINER} -p 5432:5432 -e POSTGRES_USER=${USER} -e POSTGRES_PASSWORD=${PW} -d postgres:12-alpine
 
-# Creating the coffee database inside the postgres container
-createdb:
+createdb_within_docker:
 	docker exec -it ${DB_DOCKER_CONTAINER} createdb --username=${USER} --owner=${USER} ${DB_NAME}
 
-# Stop other Docker containers
-stop_containers:
+stop_docker_containers:
 	@echo "Stopping other Docker containers";
 	if [ "$$(docker ps -q)" ]; then \
 		echo "Found and stopped containers..."; \
@@ -27,8 +25,9 @@ stop_containers:
 		echo "No active containers found."; \
 	fi
 
-# Docker
-create_docker: postgres createdb
+wait_for_docker:
+	@echo "Waiting for Docker container to fully load..."
+	@ping 127.0.0.1 -n 6 > nul
 
 start_docker:
 	docker start ${DB_DOCKER_CONTAINER}
@@ -57,7 +56,7 @@ build:
 	go build -o ${BINARY_NAME} cmd/server/*.go
 	@echo "Binary built!" 
 
-run: build stop_containers start_docker
+run: build stop_docker_containers start_docker
 	@echo "Starting API..."
 	@env PORT=${PORT} DSN=${DSN} ./${BINARY_NAME} & 
 	@echo "API started"
@@ -73,4 +72,6 @@ start: run
 
 restart: stop start
 
-end_docker: stop_docker remove_docker
+create_docker_full: stop_docker_containers create_docker_container wait_for_docker createdb_within_docker
+
+end_docker: stop_docker_containers remove_docker
