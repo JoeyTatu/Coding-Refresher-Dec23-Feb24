@@ -7,6 +7,8 @@ import (
 	"os"
 
 	"github.com/JoeyTatu/coffee-api/db"
+	"github.com/JoeyTatu/coffee-api/router"
+	"github.com/JoeyTatu/coffee-api/services"
 )
 
 type Config struct {
@@ -15,6 +17,7 @@ type Config struct {
 
 type Application struct {
 	Config Config
+	Models services.Models
 }
 
 // Global port variable for both Main and Serve
@@ -24,7 +27,8 @@ func (app *Application) Serve() error {
 	fmt.Println("API listening on port", port)
 
 	srv := &http.Server{
-		Addr: fmt.Sprintf(":%s", port),
+		Addr:    fmt.Sprintf(":%s", port),
+		Handler: router.Routes(),
 	}
 
 	return srv.ListenAndServe()
@@ -47,6 +51,7 @@ func main() {
 
 	app := &Application{
 		Config: cfg,
+		Models: services.New(dbConn.DB),
 	}
 
 	err = app.Serve()
