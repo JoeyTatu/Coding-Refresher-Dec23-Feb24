@@ -9,8 +9,7 @@
     ],
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic",
-    "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
+
     "explorer.decorations.colors": true,
     "editor.wordWrap": "on",
     "editor.autoClosingBrackets": "languageDefined",
@@ -24,5 +23,13 @@
     },
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-    }
+    },
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "go.languageServerExperimentalFeatures": {
+        "autoComplete": true,
+        "diagnostics": true
+    },
+    "go.inferGopath": true
+
 }
