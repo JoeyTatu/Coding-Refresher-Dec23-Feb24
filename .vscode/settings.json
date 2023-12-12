@@ -30,6 +30,9 @@
         "autoComplete": true,
         "diagnostics": true
     },
-    "go.inferGopath": true
+    "go.inferGopath": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 
 }
