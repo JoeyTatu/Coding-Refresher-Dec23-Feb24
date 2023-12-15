@@ -1,0 +1,22 @@
+trunk_cli_version: 1.18.0
+title: Check [[on-demand] [prettier:format:.vscode\settings.json:HEAD]]
+report:
+  - linter:
+      command: |
+        'C:\Users\Joey\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Joey\AppData\Local\trunk\tools\prettier\3.1.0-2115d831e02167aaad1518c9d39203db/node_modules/.bin\prettier' -w '.vscode\settings.json'
+      stdin_path: (none)
+      run_from: C:\Users\Joey\AppData\Local\Temp\trunk\2bbkh2p\xv4fm33\
+      timeout: 10m
+      rerun: (cd C:\Users\Joey\AppData\Local\Temp\trunk\2bbkh2p\xv4fm33\; env -i 'NODE_PATH=C:\Users\Joey\AppData\Local\trunk\tools\prettier\3.1.0-2115d831e02167aaad1518c9d39203db/node_modules' HOME= 'PATH=C:\Users\Joey\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Joey\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Joey\AppData\Local\trunk\tools\prettier\3.1.0-2115d831e02167aaad1518c9d39203db/node_modules/.bin;C:\Users\Joey\AppData\Local\trunk\tools\node\18.12.1-ee91e409de31a08a96aaff7f742f83b4/bin;C:\Users\Joey\AppData\Local\trunk\tools\node\18.12.1-ee91e409de31a08a96aaff7f742f83b4;C:\Users\Joey\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Joey\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Joey\go\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin\;C:\Program Files\Git\cmd\;C:\Users\Joey\AppData\Local\Programs\Python\Python311\;C:\Users\Joey\AppData\Local\Programs\Python\Python311\Scripts\;C:\ProgramData\chocolatey\bin;C:\Users\Joey\Go\bin;C:\Users\Joey\reflex-0.3.1;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Joey\.cargo\bin;C:\Users\Joey\go\pkg\mod\github.com\golang-migrate\migrate\v4@v4.16.3-0.20230706060513-856ea12df9d2;C:\Users\Joey\.cargo\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin\;C:\Program Files\Git\cmd\;C:\Users\Joey\AppData\Local\Programs\Python\Python311\;C:\Users\Joey\AppData\Local\Programs\Python\Python311\Scripts\;C:\ProgramData\chocolatey\bin;C:\Users\Joey\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Joey\AppData\Local\Programs\Python\Python311\;C:\Users\Joey\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Joey\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\lz4;C:\Users\Joey\reflex-0.3.1;C:\Users\Joey\go\pkg\mod\github.com\golang-migrate\migrate\v4@v4.16.3-0.20230706060513-856ea12df9d2;' 'C:\Users\Joey\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Joey\AppData\Local\trunk\tools\prettier\3.1.0-2115d831e02167aaad1518c9d39203db/node_modules/.bin\prettier' -w '.vscode\settings.json')
+      affects_cache:
+        []
+      direct_configs:
+        []
+      exit_status: exited
+      exit_code: 0
+      stdout: |
+        .vscode/settings.json 606ms
+
+      stderr: (none)
+    parser: |
+      (none)

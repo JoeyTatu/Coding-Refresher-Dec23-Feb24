@@ -1,0 +1,9 @@
+[12-08 16:17:45] [login.cc:28] GetUserRequest failed with status 16: Invalid token received 
+[12-08 16:28:06] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:28:06] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:28:47] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:28:48] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:29:53] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:29:54] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:31:57] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result
+[12-08 16:31:57] [adapters.cc:65] unexpected 0-indexing base from [golangci-lint] linter result

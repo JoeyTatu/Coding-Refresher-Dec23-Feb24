@@ -1,0 +1,796 @@
+[2023-12-08 16:28:15.667] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=40] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:28:15.668] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:28:15.677] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:28:18.247] [global] [info] [service.cc:459] [user-agent= sid=6] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=CANCELLED err='Deadline exceeeded or Client cancelled'
+[2023-12-08 16:28:18.260] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=6] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:28:18.260] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:28:18.260] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:28:18.325] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\services\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:18.326] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:18.327] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\services\main.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:18.439] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=6] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:28:18.778] [global] [info] [service.cc:115] Notifications config has not changed
+[2023-12-08 16:28:18.783] [global] [info] [runner.cc:50] Config file changed, rebuilding DAG
+[2023-12-08 16:28:18.790] [global] [info] [service.cc:49] Tools config updated; updating tools
+[2023-12-08 16:28:18.896] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\services\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:18.897] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\services\main.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:18.897] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:39.654] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:28:39.729] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:28:39.763] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=41 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:28:39.763] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:28:39.763] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *)
+[2023-12-08 16:28:39.825] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:28:39.873] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *) status=OK
+[2023-12-08 16:28:39.875] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=41] RX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *)
+[2023-12-08 16:28:39.878] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=41] TX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *) status=OK
+[2023-12-08 16:28:39.879] [global] [info] [service.cc:459] [user-agent= sid=41] RX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *)
+[2023-12-08 16:28:39.899] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:28:39.905] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:28:39.906] [global] [info] [cache.cc:894] [on-demand] [golangci-lint:lint:Go\coffee-api\Go\coffee-api\controllers:HEAD] not cacheable, running linter
+[2023-12-08 16:28:39.906] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:28:40.059] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:28:40.059] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:28:40.059] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:28:40.060] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:28:40.060] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go, message: Directory not empty
+[2023-12-08 16:28:40.060] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo, message: Directory not empty
+[2023-12-08 16:28:40.061] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:28:40.062] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:28:40.062] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:28:40.062] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:28:40.062] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go, message: Directory not empty
+[2023-12-08 16:28:40.063] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo, message: Directory not empty
+[2023-12-08 16:28:40.063] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:28:40.064] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:28:40.064] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:28:40.064] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:28:40.064] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo\Go, message: Directory not empty
+[2023-12-08 16:28:40.065] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\6phb4bo, message: Directory not empty
+[2023-12-08 16:28:40.309] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:28:48.056] [global] [info] [service.cc:459] [user-agent= sid=41] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
+[2023-12-08 16:28:48.057] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=41] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
+[2023-12-08 16:28:48.058] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=41] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
+[2023-12-08 16:28:48.070] [global] [info] [service.cc:225] lint session ended sid=41
+[2023-12-08 16:28:48.070] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=41] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:28:48.074] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=41] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:28:48.074] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:28:48.091] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:28:48.258] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=41] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:29:47.132] [global] [info] [cache.cc:890] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:29:47.622] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:29:47.713] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:29:47.757] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=42 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:29:47.757] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:29:47.757] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *)
+[2023-12-08 16:29:47.841] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:29:47.900] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *) status=OK
+[2023-12-08 16:29:47.902] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=42] RX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *)
+[2023-12-08 16:29:47.906] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=42] TX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *) status=OK
+[2023-12-08 16:29:47.908] [global] [info] [service.cc:459] [user-agent= sid=42] RX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *)
+[2023-12-08 16:29:47.939] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:29:47.946] [global] [error] [tool.cc:105] Error encountered while renaming tool shim C:\Users\Joey\AppData\Local\trunk\repos\fb6b5072b250922a0eecbc0c510d1541\tools\trufflehog-6AXd3 to C:\Users\Joey\AppData\Local\trunk\repos\fb6b5072b250922a0eecbc0c510d1541\tools\trufflehog.bat: Permission denied
+[2023-12-08 16:29:47.947] [global] [info] [cache.cc:894] [on-demand] [golangci-lint:lint:Go\coffee-api\Go\coffee-api\controllers:HEAD] not cacheable, running linter
+[2023-12-08 16:29:47.976] [global] [info] [cache.cc:852] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:29:47.996] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:29:54.046] [global] [info] [service.cc:459] [user-agent= sid=42] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
+[2023-12-08 16:29:54.046] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=42] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
+[2023-12-08 16:29:54.047] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=42] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
+[2023-12-08 16:29:54.059] [global] [info] [service.cc:225] lint session ended sid=42
+[2023-12-08 16:29:54.059] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=42] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:29:54.064] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=42] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:29:54.065] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:29:54.079] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:29:54.246] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=42] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:30:11.112] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:30:11.167] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:30:11.204] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=43 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:30:11.204] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:30:11.204] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *)
+[2023-12-08 16:30:11.281] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:30:11.335] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *) status=OK
+[2023-12-08 16:30:11.335] [global] [info] [service.cc:225] lint session ended sid=43
+[2023-12-08 16:30:11.335] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=43] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:30:11.336] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=43] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:30:11.336] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:30:11.343] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:31:51.243] [global] [info] [cache.cc:890] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:31:51.715] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:31:51.802] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:31:51.854] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=44 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:31:51.854] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:31:51.855] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *)
+[2023-12-08 16:31:51.885] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:31:51.959] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:31:52.030] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *) status=OK
+[2023-12-08 16:31:52.033] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=44] RX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *)
+[2023-12-08 16:31:52.037] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=44] TX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *) status=OK
+[2023-12-08 16:31:52.039] [global] [info] [service.cc:459] [user-agent= sid=44] RX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *)
+[2023-12-08 16:31:52.067] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:31:52.068] [global] [info] [cache.cc:852] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:31:52.069] [global] [info] [cache.cc:894] [on-demand] [golangci-lint:lint:Go\coffee-api\Go\coffee-api\controllers:HEAD] not cacheable, running linter
+[2023-12-08 16:31:52.073] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:31:54.270] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:31:54.353] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:31:54.394] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=45 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:31:54.394] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:31:54.395] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *)
+[2023-12-08 16:31:54.523] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:31:54.595] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *) status=OK
+[2023-12-08 16:31:54.596] [global] [info] [service.cc:225] lint session ended sid=45
+[2023-12-08 16:31:54.596] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=45] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:31:54.597] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=45] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:31:54.598] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:31:54.609] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:31:57.639] [global] [info] [service.cc:459] [user-agent= sid=44] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
+[2023-12-08 16:31:57.643] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=44] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
+[2023-12-08 16:31:57.644] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=44] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
+[2023-12-08 16:31:57.650] [global] [info] [service.cc:225] lint session ended sid=44
+[2023-12-08 16:31:57.650] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=44] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:31:57.654] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=44] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:31:57.654] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:31:57.670] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:31:57.835] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=44] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:32:12.232] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:32:12.307] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:32:12.339] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=46 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:32:12.339] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:32:12.340] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *)
+[2023-12-08 16:32:12.393] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:32:12.434] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *) status=OK
+[2023-12-08 16:32:12.437] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=46] RX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *)
+[2023-12-08 16:32:12.440] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=46] TX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *) status=OK
+[2023-12-08 16:32:12.441] [global] [info] [service.cc:459] [user-agent= sid=46] RX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *)
+[2023-12-08 16:32:12.456] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:32:12.458] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:32:12.460] [global] [info] [cache.cc:894] [on-demand] [golangci-lint:lint:Go\coffee-api\Go\coffee-api\controllers:HEAD] not cacheable, running linter
+[2023-12-08 16:32:12.461] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:32:12.591] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:32:12.591] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:32:12.591] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:32:12.591] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:32:12.592] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go, message: Directory not empty
+[2023-12-08 16:32:12.592] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj, message: Directory not empty
+[2023-12-08 16:32:12.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:32:12.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:32:12.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:32:12.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:32:12.594] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go, message: Directory not empty
+[2023-12-08 16:32:12.594] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj, message: Directory not empty
+[2023-12-08 16:32:12.595] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:32:12.595] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:32:12.595] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:32:12.596] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:32:12.596] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj\Go, message: Directory not empty
+[2023-12-08 16:32:12.596] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\f31zorj, message: Directory not empty
+[2023-12-08 16:32:12.851] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:32:16.205] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:32:16.292] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:32:16.351] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=47 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:32:16.352] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:32:16.354] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *)
+[2023-12-08 16:32:16.498] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:32:16.686] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *) status=OK
+[2023-12-08 16:32:16.687] [global] [info] [service.cc:225] lint session ended sid=47
+[2023-12-08 16:32:16.687] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=47] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:32:16.689] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=47] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:32:16.689] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:32:16.702] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:32:19.834] [global] [info] [service.cc:459] [user-agent= sid=46] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
+[2023-12-08 16:32:19.835] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=46] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
+[2023-12-08 16:32:19.835] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=46] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
+[2023-12-08 16:32:19.838] [global] [info] [service.cc:225] lint session ended sid=46
+[2023-12-08 16:32:19.838] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=46] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:32:19.840] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=46] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:32:19.840] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:32:19.855] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:32:20.022] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=46] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:32:55.344] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:32:55.424] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:32:55.456] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=48 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:32:55.457] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:32:55.457] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *)
+[2023-12-08 16:32:55.507] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:32:55.550] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *) status=OK
+[2023-12-08 16:32:55.552] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=48] RX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *)
+[2023-12-08 16:32:55.554] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=48] TX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *) status=OK
+[2023-12-08 16:32:55.555] [global] [info] [service.cc:459] [user-agent= sid=48] RX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *)
+[2023-12-08 16:32:55.569] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:32:55.570] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:32:55.572] [global] [info] [cache.cc:894] [on-demand] [golangci-lint:lint:Go\coffee-api\Go\coffee-api\controllers:HEAD] not cacheable, running linter
+[2023-12-08 16:32:55.575] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\controllers\coffee.go:HEAD] not cacheable, running linter
+[2023-12-08 16:32:55.643] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:32:55.644] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:32:55.644] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:32:55.644] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:32:55.644] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go, message: Directory not empty
+[2023-12-08 16:32:55.644] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n, message: Directory not empty
+[2023-12-08 16:32:55.645] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:32:55.645] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:32:55.645] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:32:55.646] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:32:55.646] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go, message: Directory not empty
+[2023-12-08 16:32:55.646] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n, message: Directory not empty
+[2023-12-08 16:32:55.647] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers\coffee.go, message: Permission denied
+[2023-12-08 16:32:55.647] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers, message: Permission denied
+[2023-12-08 16:32:55.647] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api\controllers, message: Directory not empty
+[2023-12-08 16:32:55.647] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:32:55.648] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n\Go, message: Directory not empty
+[2023-12-08 16:32:55.648] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\du24t1n, message: Directory not empty
+[2023-12-08 16:32:55.907] [global] [info] [cache.cc:852] [monitor] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] already cached, not running linter
+[2023-12-08 16:32:55.926] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:32:56.007] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:32:56.047] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=49 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:32:56.047] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:32:56.048] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *)
+[2023-12-08 16:32:56.175] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\controllers\coffee.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:32:56.320] [global] [info] [service.cc:426] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::FormatBuffer(grpc::ServerContext *, const proto::v1::FormatBufferRequest *, proto::v1::FormatBufferResponse *) status=OK
+[2023-12-08 16:32:56.321] [global] [info] [service.cc:225] lint session ended sid=49
+[2023-12-08 16:32:56.321] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=49] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:32:56.322] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=49] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:32:56.323] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:32:56.334] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:33:02.121] [global] [info] [service.cc:459] [user-agent= sid=48] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
+[2023-12-08 16:33:02.125] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=48] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
+[2023-12-08 16:33:02.125] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=48] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
+[2023-12-08 16:33:02.130] [global] [info] [service.cc:225] lint session ended sid=48
+[2023-12-08 16:33:02.130] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=48] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:33:02.133] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=48] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:33:02.133] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:33:02.142] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:33:02.314] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=48] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:33:47.025] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *)
+[2023-12-08 16:33:47.144] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:33:47.183] [global] [info] [service.cc:214] [user-agent=lsp-proxy sid=n/a] lint session created sid=50 with the following options:
+cache_enabled: true
+num_jobs: 4
+session_type: SESSION_TYPE_LSP
+client_id: "lsp-proxy"
+scope: SESSION_SCOPE_ALL
+
+[2023-12-08 16:33:47.183] [global] [info] [service.cc:146] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, proto::v1::StartResponse *) status=OK
+[2023-12-08 16:33:47.184] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *)
+[2023-12-08 16:33:47.246] [global] [info] [session_context.cc:138] Making commit info with id: 66f35d152313a748b9ebc51f8ad7974fd4668413
+[2023-12-08 16:33:47.283] [global] [info] [service.cc:391] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::GetChangedFiles(grpc::ServerContext *, const proto::v1::GetChangedFilesRequest *, proto::v1::GetChangedFilesResponse *) status=OK
+[2023-12-08 16:33:47.285] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=50] RX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *)
+[2023-12-08 16:33:47.288] [global] [info] [service.cc:361] [user-agent=lsp-proxy sid=50] TX:virtual grpc::Status trunk::cli::lint::Service::Queue(grpc::ServerContext *, const proto::v1::QueueRequest *, proto::v1::QueueResponse *) status=OK
+[2023-12-08 16:33:47.289] [global] [info] [service.cc:459] [user-agent= sid=50] RX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *)
+[2023-12-08 16:33:47.306] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\router\router.go:HEAD] not cacheable, running linter
+[2023-12-08 16:33:47.306] [global] [info] [cache.cc:894] [on-demand] [git-diff-check:lint:Go\coffee-api\router\router.go:upstream] not cacheable, running linter
+[2023-12-08 16:33:47.310] [global] [info] [cache.cc:894] [on-demand] [golangci-lint:lint:Go\coffee-api\Go\coffee-api\router:HEAD] not cacheable, running linter
+[2023-12-08 16:33:47.313] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\router\router.go:HEAD] not cacheable, running linter
+[2023-12-08 16:33:47.511] [global] [info] [cache.cc:890] [on-demand] [gofmt:format:Go\coffee-api\router\router.go:HEAD] is cacheable, but can not be found, running linter
+[2023-12-08 16:33:47.534] [global] [info] [cache.cc:894] [on-demand] [trufflehog:lint:Go\coffee-api\router\router.go:upstream] not cacheable, running linter
+[2023-12-08 16:33:47.587] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router\router.go, message: Permission denied
+[2023-12-08 16:33:47.588] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router, message: Permission denied
+[2023-12-08 16:33:47.588] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router, message: Directory not empty
+[2023-12-08 16:33:47.590] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:33:47.590] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go, message: Directory not empty
+[2023-12-08 16:33:47.591] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk, message: Directory not empty
+[2023-12-08 16:33:47.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router\router.go, message: Permission denied
+[2023-12-08 16:33:47.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router, message: Permission denied
+[2023-12-08 16:33:47.593] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router, message: Directory not empty
+[2023-12-08 16:33:47.594] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:33:47.594] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go, message: Directory not empty
+[2023-12-08 16:33:47.594] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk, message: Directory not empty
+[2023-12-08 16:33:47.595] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router\router.go, message: Permission denied
+[2023-12-08 16:33:47.595] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router, message: Permission denied
+[2023-12-08 16:33:47.595] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api\router, message: Directory not empty
+[2023-12-08 16:33:47.596] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go\coffee-api, message: Directory not empty
+[2023-12-08 16:33:47.596] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk\Go, message: Directory not empty
+[2023-12-08 16:33:47.596] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: C:\Users\Joey\AppData\Local\Temp\trunk\akburrk, message: Directory not empty
+[2023-12-08 16:33:49.515] [global] [info] [service.cc:459] [user-agent= sid=50] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
+[2023-12-08 16:33:49.518] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=50] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
+[2023-12-08 16:33:49.519] [global] [info] [service.cc:518] [user-agent=lsp-proxy sid=50] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
+[2023-12-08 16:33:49.523] [global] [info] [service.cc:225] lint session ended sid=50
+[2023-12-08 16:33:49.523] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=50] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:33:49.526] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=50] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:33:49.526] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:33:49.538] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:33:49.704] [global] [info] [service.cc:285] [user-agent=lsp-proxy sid=50] TrackCheckUsageEvent upload ok: true with code: ok
+[2023-12-08 16:34:15.303] [global] [info] [service.cc:225] lint session ended sid=5
+[2023-12-08 16:34:15.303] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=5] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:15.303] [global] [info] [service.cc:225] lint session ended sid=4
+[2023-12-08 16:34:15.303] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=4] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:15.303] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:15.303] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:15.308] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=5] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:15.308] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:15.309] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=4] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:15.309] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:15.318] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:15.330] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:15.688] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:15.688] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:15.689] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:15.692] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:16.135] [global] [info] [grpc.cc:29] TX:virtual grpc::Status trunk::cli::actions::Service::GetNotificationsStream(grpc::ServerContext *, const proto::v1::GetNotificationsStreamRequest *, grpc::ServerWriter<proto::v1::GetNotificationsStreamResponse> *) status=OK
+[2023-12-08 16:34:16.206] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:16.206] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:16.208] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:16.210] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:18.437] [global] [info] [service.cc:225] lint session ended sid=3
+[2023-12-08 16:34:18.437] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=3] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:18.437] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:18.439] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=3] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:18.439] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:18.459] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:18.468] [global] [info] [service.cc:225] lint session ended sid=2
+[2023-12-08 16:34:18.468] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=2] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:18.468] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:18.469] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=2] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:18.469] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2023-12-08 16:34:18.487] [global] [info] [service.cc:294] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2023-12-08 16:34:53.673] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:53.673] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:53.674] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:53.676] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:54.145] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:54.145] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:54.146] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:34:54.147] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:40.048] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:40.048] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:40.049] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:40.050] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:41.418] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:41.418] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:41.419] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:36:41.420] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:38:11.299] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:38:11.300] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:38:11.302] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:38:11.303] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:02.765] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:02.765] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:02.766] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:02.768] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:19.617] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:19.617] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:19.618] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:19.620] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:45.459] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:45.459] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:45.460] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:45.460] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:46.637] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:46.638] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:46.640] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:39:46.641] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:33.936] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:33.936] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:33.937] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:33.938] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:49.200] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:49.200] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:49.201] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:49.204] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:55.399] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:55.399] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:55.400] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:40:55.402] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:22.332] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:22.332] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:22.333] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:22.335] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:38.484] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:38.485] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:38.486] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:38.488] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:56.248] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:56.248] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:56.248] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:56.249] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:57.203] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:57.203] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:57.204] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:57.204] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:58.690] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:58.690] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:58.695] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:42:58.705] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:43:18.589] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:43:18.590] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:43:18.592] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:43:18.594] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:44:45.183] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:44:45.183] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:44:45.184] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:44:45.186] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:01.717] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:01.717] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:01.719] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:01.720] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:29.599] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:29.600] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:29.602] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:29.605] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:36.272] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:36.273] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:36.276] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:36.279] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:57.402] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:57.402] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:57.403] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:57.403] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:58.387] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:58.387] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:58.388] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:45:58.389] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:18.231] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:18.231] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:18.232] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:18.236] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:46.537] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:46.537] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:46.538] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:46:46.541] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:47:49.853] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:47:49.853] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:47:49.856] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:47:49.858] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:01.101] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:01.101] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:01.103] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:01.105] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:58.647] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:58.647] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:58.649] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:48:58.650] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:00.140] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:00.140] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:00.143] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:00.146] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:19.032] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:19.033] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:19.034] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:19.035] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:32.596] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:32.596] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:32.597] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:32.599] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:38.741] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:38.741] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:38.742] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:38.743] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:40.262] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:40.263] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:40.264] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:49:40.266] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:46.918] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:46.918] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:46.920] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:46.922] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:56.574] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:56.574] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:56.576] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:50:56.577] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:00.249] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:00.249] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:00.250] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:00.251] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:56.295] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:56.295] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:56.296] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:51:56.298] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:00.627] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:00.627] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:00.628] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:00.630] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:01.925] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:01.925] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:01.928] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:52:01.931] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:31.252] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:31.252] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:31.253] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:31.255] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:55.032] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:55.032] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:55.034] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:53:55.037] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:28.456] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:28.456] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:28.457] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:28.458] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:29.472] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:29.473] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:29.473] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:55:29.474] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:56:20.687] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:56:20.688] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:56:20.689] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:56:20.691] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:29.694] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:29.694] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:29.695] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:29.695] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:30.620] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:30.620] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:30.621] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:58:30.621] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:35.867] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:35.867] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:35.868] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:35.870] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:57.078] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:57.078] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:57.079] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 16:59:57.080] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:15:52.449] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 17:15:52.449] [global] [info] [runner.cc:136] Executing action trunk-cache-prune.schedule.24h
+[2023-12-08 17:15:52.450] [global] [info] [runner.cc:136] Executing action trunk-share-with-everyone.schedule.24h
+[2023-12-08 17:15:52.450] [global] [info] [runner.cc:136] Executing action trunk-single-player-auto-on-upgrade.schedule.24h+5m
+[2023-12-08 17:15:54.676] [global] [info] [service.cc:105] CLI version change; do not run file-triggered actions
+[2023-12-08 17:15:54.678] [global] [info] [service.cc:36] CLI version change; do not update tools
+[2023-12-08 17:15:54.715] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:15:54.715] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:15:54.716] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:15:54.739] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:18.796] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 17:28:18.796] [global] [info] [runner.cc:136] Executing action trunk-single-player-auto-upgrade.schedule.24h+1h
+[2023-12-08 17:28:19.438] [global] [info] [service.cc:105] CLI version change; do not run file-triggered actions
+[2023-12-08 17:28:19.439] [global] [info] [service.cc:36] CLI version change; do not update tools
+[2023-12-08 17:28:19.450] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:19.450] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:19.451] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:19.454] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:20.812] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:20.812] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:20.813] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:20.813] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:21.455] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:21.455] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:21.455] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 17:28:21.456] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:18.786] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 18:28:19.414] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:19.414] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:19.415] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:19.416] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:20.823] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:20.823] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:20.824] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 18:28:20.824] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 19:28:18.791] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 19:28:20.816] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 19:28:20.817] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 19:28:20.817] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 19:28:20.818] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 20:28:18.799] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 20:28:20.825] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 20:28:20.825] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 20:28:20.826] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 20:28:20.827] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:26.483] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:26.483] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:26.484] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:26.486] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:28.690] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:28.691] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:28.693] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:05:28.699] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:06:04.798] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:06:04.798] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:06:04.800] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:06:04.802] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:07:03.141] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:07:03.141] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:07:03.143] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:07:03.145] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:28:18.789] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 21:28:20.840] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:28:20.841] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:28:20.841] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 21:28:20.842] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:00.864] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:00.865] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:00.865] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:00.866] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:01.928] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:01.928] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:01.930] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:01.931] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:26.154] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:26.155] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:26.156] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:05:26.157] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:06:41.864] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:06:41.865] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:06:41.866] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:06:41.867] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:27.850] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:27.851] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:27.853] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:27.855] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:29.162] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:29.163] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:29.164] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:09:29.165] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:19.231] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:19.232] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:19.232] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:19.233] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:28.031] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:28.031] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:28.032] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:11:28.034] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:15.921] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:15.921] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:15.922] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:15.923] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:29.502] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:29.502] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:29.503] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:29.504] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:30.720] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:30.721] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:30.722] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:12:30.724] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:29.553] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:29.554] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:29.554] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:29.555] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:41.499] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:41.499] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:41.500] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:14:41.500] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:30.952] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:30.952] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:30.953] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:30.954] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:32.316] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:32.316] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:32.317] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:15:32.318] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:21.101] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:21.102] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:21.103] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:21.104] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:49.083] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:49.083] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:49.085] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:16:49.087] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:05.599] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:05.600] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:05.601] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:05.603] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:39.179] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:39.180] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:39.181] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:17:39.183] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:24.282] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:24.283] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:24.284] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:24.285] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:25.545] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:25.545] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:25.546] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:20:25.548] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:01.991] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:01.991] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:01.992] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:01.992] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:07.814] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:07.814] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:07.817] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:07.819] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:52.904] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:52.905] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:52.905] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:52.906] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:54.161] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:54.161] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:54.162] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:23:54.166] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:54.556] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:54.556] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:54.557] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:54.558] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:55.747] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:55.748] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:55.749] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:26:55.750] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:18.788] [global] [info] [runner.cc:136] Executing action trunk-upgrade-available.schedule.1h
+[2023-12-08 22:28:21.062] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:21.063] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:21.064] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:21.066] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:38.431] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:38.431] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:38.432] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:38.434] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:39.977] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:39.978] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:39.980] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:39.981] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:49.500] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:49.500] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:49.502] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:49.506] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:51.104] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:51.105] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:51.106] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:28:51.108] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:41.075] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:41.075] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:41.076] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:41.077] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:42.632] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:42.632] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:42.633] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:29:42.635] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:08.518] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:08.519] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:08.520] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:08.521] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:09.560] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:09.560] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:09.561] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:09.562] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:45.951] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:45.952] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:45.953] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:45.955] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:47.140] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:47.140] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:47.141] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:30:47.142] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:32:27.973] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:32:27.973] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:32:27.975] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
+[2023-12-08 22:32:27.977] [global] [info] [app_context.cc:391] TryGetTrunkConfigPb failed
