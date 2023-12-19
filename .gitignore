@@ -1,2 +1,4 @@
 .*
-!.*example
+config.json
+config2.json
+!.config_example.json
