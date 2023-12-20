@@ -1,15 +1,14 @@
 package middleware
 
 import (
-	"crypto/rand"
+	"fmt"
 	"net/http"
 	"strings"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
+	"github.com/joeytatu/restaurant-management-system/helpers"
 )
-
-const secretKey = "your_secret_key"
 
 // Authentication is a middleware function to authenticate requests using JWT
 func Authentication() gin.HandlerFunc {
@@ -24,17 +23,13 @@ func Authentication() gin.HandlerFunc {
 
 		tokenString := strings.Split(authorizationHeader, " ")[1]
 
+		secretKey := getSecretKey()
+
 		token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
 			return []byte(secretKey), nil
 		})
 
-		if err != nil {
-			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - Invalid Token"})
-			c.Abort()
-			return
-		}
-
-		if !token.Valid {
+		if err != nil || !token.Valid {
 			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - Invalid Token"})
 			c.Abort()
 			return
@@ -44,18 +39,10 @@ func Authentication() gin.HandlerFunc {
 	}
 }
 
-func GenerateSecretKey(length int) (string, error) {
-	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	key := make([]byte, length)
-
-	_, err := rand.Read(key)
+func getSecretKey() string {
+	secretKey, err := helpers.GenerateSecretKey(16)
 	if err != nil {
-		return "", err
+		fmt.Println("Error getting secret key. Error:", err)
 	}
-
-	for i := range key {
-		key[i] = charset[int(key[i])%len(charset)]
-	}
-
-	return string(key), nil
+	return secretKey
 }
