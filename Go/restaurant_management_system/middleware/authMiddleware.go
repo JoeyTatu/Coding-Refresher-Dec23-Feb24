@@ -13,15 +13,15 @@ import (
 // Authentication is a middleware function to authenticate requests using JWT
 func Authentication() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		authorizationHeader := c.GetHeader("Authorization")
+		authorisationHeader := c.GetHeader("Authorisation")
 
-		if authorizationHeader == "" {
-			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - Missing Authorization Header"})
+		if authorisationHeader == "" {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorised - Missing Authorisation Header"})
 			c.Abort()
 			return
 		}
 
-		tokenString := strings.Split(authorizationHeader, " ")[1]
+		tokenString := strings.Split(authorisationHeader, " ")[1]
 
 		secretKey := getSecretKey()
 
@@ -30,7 +30,7 @@ func Authentication() gin.HandlerFunc {
 		})
 
 		if err != nil || !token.Valid {
-			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - Invalid Token"})
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorised - Invalid Token"})
 			c.Abort()
 			return
 		}
@@ -40,7 +40,7 @@ func Authentication() gin.HandlerFunc {
 }
 
 func getSecretKey() string {
-	secretKey, err := helpers.GenerateSecretKey(16)
+	secretKey, err := helpers.GenerateSecretKey()
 	if err != nil {
 		fmt.Println("Error getting secret key. Error:", err)
 	}

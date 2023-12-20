@@ -4,9 +4,9 @@ import (
 	"crypto/rand"
 )
 
-func GenerateSecretKey(length int) (string, error) {
+func GenerateSecretKey() (string, error) {
 	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	key := make([]byte, length)
+	key := make([]byte, 16)
 
 	_, err := rand.Read(key)
 	if err != nil {
