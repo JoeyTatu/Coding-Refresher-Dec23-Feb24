@@ -1,3 +1,0 @@
-module github.com/joeytatu/docker-golang
-
-go 1.21.4

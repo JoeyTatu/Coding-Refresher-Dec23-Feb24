@@ -14,7 +14,7 @@ func FoodRoutes(incomingRoutes *gin.Engine) {
 }
 
 func InvoiceRoutes(incomingRoutes *gin.Engine) {
-	incomingRoutes.GET("/incoives", controllers.GetInvoices())
+	incomingRoutes.GET("/invoices", controllers.GetInvoices())
 	incomingRoutes.GET("/invoices/:invoice_id", controllers.GetInvoiceById())
 	incomingRoutes.POST("/invoices", controllers.CreateInvoice())
 	incomingRoutes.PATCH("/invoices/:invoice_id", controllers.UpdateInvoice())
