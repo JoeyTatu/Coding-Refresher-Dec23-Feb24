@@ -1,38 +1,32 @@
 {
     "editor.formatOnSave": true,
-    "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Path": "autopep8",
-    "python.formatting.autopep8Args": [
-        "--in-place",
-        "--recursive",
-        "."
-    ],
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "basic",
-
-    "explorer.decorations.colors": true,
     "editor.wordWrap": "on",
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingComments": "languageDefined",
     "editor.autoClosingDelete": "auto",
     "editor.autoClosingQuotes": "languageDefined",
-    "editor.defaultFormatter": "golang.go",
     "files.associations": {
         "*.make": "makefile",
-        "*.mk": "makefile"
+        "*.mk": "makefile",
+        "*.bak": "backup"
     },
-    "[sql]": {
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.bracketPairColorization.enabled": true,
+        "editor.autoClosingBrackets": "always"
     },
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "go.languageServerExperimentalFeatures": {
+        "applyFix": true,
         "autoComplete": true,
         "diagnostics": true
     },
     "go.inferGopath": true,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    }
-
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000
 }

@@ -2,3 +2,5 @@
 config.json
 config2.json
 !.config_example.json
+.trunk
+.trunk\*
