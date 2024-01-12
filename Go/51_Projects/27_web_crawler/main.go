@@ -1,9 +1,21 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"log"
+	"math/rand"
+	"net/http"
+	"net/url"
+	"os"
+	"strings"
+	"time"
+
+	"github.com/PuerkitoBio/goquery"
 )
+
+var userAgentsIndex int // Counter for the number of URLs found
+const userAgentChangeThreshold = 1000
 
 var userAgents = []string{
 	"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
@@ -1042,53 +1054,159 @@ var userAgents = []string{
 	"Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; MAARJS; rv:11.0) like Gecko",
 	"Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N900T Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
 	"Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/7.0.55539 Mobile/12H143 Safari/600.1.4",
-	"",
 }
 
-func randomUserAgent() {
+func randomUserAgent() string {
+	// Change User Agent when the threshold is reached
+	if userAgentsIndex >= userAgentChangeThreshold {
+		userAgentsIndex = 0
+	}
 
+	source := rand.NewSource(time.Now().Unix())
+	randomGenerator := rand.New(source)
+
+	randNum := randomGenerator.Int() % len(userAgents)
+	return userAgents[randNum]
 }
 
-func crawl(targetURL string, baseURL string) []string {
-	fmt.Println(targetURL)
+func crawl(targetURL string, baseURL string, tokens chan struct{}, outputFile *os.File) []string {
+	// fmt.Println(targetURL)
+	tokens <- struct{}{}
+	defer func() { <-tokens }()
+
 	response, err := getRequest(targetURL)
 	if err != nil {
-		log.Fatalln("Error:", err)
+		log.Println("Error getting response:", err)
+		return nil
 	}
-	
+
+	defer response.Body.Close()
+
 	links := discoverLinks(response, baseURL)
 	foundURLs := []string{}
 
-	for _, link := range links{
-		resolveRelativeLinks(link, baseURL)
+	for _, link := range links {
+		ok, correctLink := resolveRelativeLinks(link, baseURL)
+		if ok && correctLink != "" {
+			foundURLs = append(foundURLs, correctLink)
+		}
+	}
+
+	// Increment the counter for each URL found
+	userAgentsIndex += len(foundURLs)
+
+	// Change User Agent when the threshold is reached
+	if userAgentsIndex >= userAgentChangeThreshold {
+		userAgentsIndex = 0
+	}
+
+	writeLinksToFile(outputFile, foundURLs)
+
+	return foundURLs
+}
+
+func writeLinksToFile(outputFile *os.File, links []string) {
+	for _, link := range links {
+		outputFile.WriteString(link + "\n")
 	}
 }
 
-func getRequest(){
+func getRequest(targetURL string) (*http.Response, error) {
+	client := &http.Client{}
 
+	request, err := http.NewRequest("GET", targetURL, nil)
+	if err != nil {
+		return nil, err
+	}
+
+	request.Header.Set("User-Agent", randomUserAgent())
+	response, err := client.Do(request)
+	if err != nil {
+		return nil, err
+	}
+
+	return response, nil
 }
 
-func discoverLinks(){
+func discoverLinks(response *http.Response, baseURL string) []string {
+	if response == nil {
+		return nil
+	}
 
+	document, err := goquery.NewDocumentFromReader(response.Body)
+	if err != nil {
+		log.Println("Error creating document:", err)
+		return nil
+	}
+
+	foundURLs := []string{}
+	document.Find("a").Each(func(i int, s *goquery.Selection) {
+		if res, exists := s.Attr("href"); exists {
+			foundURLs = append(foundURLs, res)
+		}
+	})
+
+	return foundURLs
 }
 
-func resolveRelativeLinks(link invalid type, baseURL string) {
-	
+func resolveRelativeLinks(href string, baseURL string) (bool, string) {
+	resultHref := checkRelative(href, baseURL)
+	baseParse, _ := url.Parse(baseURL)
+	resultParse, _ := url.Parse(resultHref)
+
+	if baseParse != nil && resultParse != nil && baseParse.Host == resultParse.Host {
+		return true, resultHref
+	}
+
+	return false, ""
 }
 
+func checkRelative(href, baseURL string) string {
+	if strings.HasPrefix(href, "/") {
+		return fmt.Sprintf("%s%s", baseURL, href)
+	}
+	return href
+}
 
 func main() {
 	workList := make(chan []string)
 	var n int
 	n++
-	baseDomain := "https://www.theguardian.com"
 
-	go func() { workList <- []string{"https://www.theguardian.com"} }()
+	// Ask the user for the base domain
+	fmt.Print("Enter the base domain (e.g., 'theguardian.com'): ")
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	baseDomainInput := scanner.Text()
+
+	// Validate and format user input
+	baseDomain := "https://www." + strings.TrimSpace(baseDomainInput)
+	if !strings.HasPrefix(baseDomain, "https://www.") {
+		log.Fatal("Invalid base domain format")
+	}
+
+	tokens := make(chan struct{}, 10)
+
+	// Check if the file already exists
+	if _, err := os.Stat("crawled_links.txt"); err == nil {
+		err := os.Remove("crawled_links.txt")
+		if err != nil {
+			log.Fatal("Error deleting existing file:", err)
+		}
+	}
+
+	outputFile, err := os.Create("crawled_links.txt")
+	if err != nil {
+		log.Fatal("Error creating output file:", err)
+	}
+	defer outputFile.Close()
+
+	go func() { workList <- []string{baseDomain} }()
 
 	seen := make(map[string]bool)
 
 	for ; n > 0; n-- {
-		list := workList
+		list := <-workList
 
 		for _, link := range list {
 			if !seen[link] {
@@ -1096,7 +1214,7 @@ func main() {
 				n++
 
 				go func(link string, baseURL string) {
-					foundLinks := crawl(link, baseDomain)
+					foundLinks := crawl(link, baseDomain, tokens, outputFile)
 					if foundLinks != nil {
 						workList <- foundLinks
 					}
@@ -1104,6 +1222,6 @@ func main() {
 			}
 		}
 	}
-}
 
-// https://www.youtube.com/watch?v=c1XNhAnUuLo&list=PL5dTjWUk_cPYztKD7WxVFluHvpBNM28N9&index=27&t=27m&51s
+	fmt.Println("Crawling completed. Links saved to crawled_links.txt.")
+}
