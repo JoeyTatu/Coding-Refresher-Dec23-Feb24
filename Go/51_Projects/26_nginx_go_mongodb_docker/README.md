@@ -1,1 +1,1 @@
-Discussing project.
+Discussing project. No actually coding took place.
