@@ -29,24 +29,18 @@ func getDayAfterTomorrow() (string, error) {
 func GetWarnings(day ...string) ([]Warning, error) {
 	var nameOfDay string
 
-	if len(day) > 0 {
-		if day[0] != "today" && day[0] != "tommorow" && day[0] != "dayAfterTomorrow" {
-			err := fmt.Errorf("invalid day name")
-			return nil, err
-		}
-		nameOfDay = day[0]
-	}
-
 	if len(day) == 0 {
 		nameOfDay = "today"
-	}
-
-	if day[0] == "dayAfterTomorrow" {
+	} else if day[0] == "tomorrow" {
+		nameOfDay = "tomorrow"
+	} else if day[0] == "dayAfterTomorrow" {
 		result, err := getDayAfterTomorrow()
 		if err != nil {
 			return nil, err
 		}
 		nameOfDay = result
+	} else {
+		return nil, fmt.Errorf("invalid day name")
 	}
 
 	url := "https://www.met.ie/warnings-" + nameOfDay + ".html"

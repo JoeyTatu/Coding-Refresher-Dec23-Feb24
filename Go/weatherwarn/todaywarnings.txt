@@ -1,0 +1,73 @@
+Title: Weather Warnings
+Description: Storm Isha will bring extremely strong and gusty southwest winds with severe and destructive gusts, particularly in coastal and exposed areas.
+
+
+
+Impacts:
+
+
+
+• Dangerous coastal conditions with high waves
+
+• Treacherous travelling conditions
+
+• Risk of significant and widespread power outagesStorm Isha will bring very strong southwest winds with severe and damaging gusts.
+
+ 
+
+Impacts:
+
+
+
+• Large coastal waves with wave overtopping
+
+• Very difficult travelling conditions
+
+• Fallen trees
+
+• Damage to power linesStorm Isha will bring very strong southwest to west winds with severe and damaging gusts.
+
+ 
+
+Impacts:
+
+
+
+• Large coastal waves with wave overtopping
+
+• Very difficult travelling conditions
+
+• Fallen trees
+
+• Damage to power lines Storm Isha will bring strong and gusty southwest winds with heavy rain at times. 
+
+
+
+Potential impacts:
+
+
+
+• Large coastal waves with wave overtopping
+
+• Difficult travelling conditions
+
+• Debris, loose objects displaced
+Valid: 11:00 Sunday 21/01/2024 to 04:00 Monday 22/01/2024
+Issued: 08:35 Friday 19/01/2024
+
+#################################
+
+Title: Marine Warnings
+Description: Southwest to west winds will reach storm force 10 or violent storm force 11.Winds will reach storm force 10 on Irish coastal waters from Belfast Lough to Carnsore Point to Loop Head and on the Irish Sea.
+Valid: 17:29 Sunday 21/01/2024 to 01:00 Monday 22/01/2024
+Issued: 17:29 Sunday 21/01/2024
+
+#################################
+
+Title: Environmental Advisories
+Description: no warning
+Valid: 
+Issued: 
+
+#################################
+
