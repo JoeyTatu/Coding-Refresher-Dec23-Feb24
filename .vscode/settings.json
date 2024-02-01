@@ -28,5 +28,8 @@
     },
     "go.inferGopath": true,
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000
+    "files.autoSaveDelay": 5000,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+      }
 }
